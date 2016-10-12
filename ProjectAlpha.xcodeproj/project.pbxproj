@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		276352141DA96DA200C11154 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 276352131DA96DA200C11154 /* main.m */; };
 		276352171DA96DA200C11154 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 276352161DA96DA200C11154 /* AppDelegate.m */; };
-		2763521A1DA96DA200C11154 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276352191DA96DA200C11154 /* ViewController.m */; };
+		2763521A1DA96DA200C11154 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276352191DA96DA200C11154 /* LoginViewController.m */; };
 		2763521D1DA96DA200C11154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2763521B1DA96DA200C11154 /* Main.storyboard */; };
 		2763521F1DA96DA200C11154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2763521E1DA96DA200C11154 /* Assets.xcassets */; };
 		276352221DA96DA200C11154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276352201DA96DA200C11154 /* LaunchScreen.storyboard */; };
 		2763522D1DA96DA300C11154 /* ProjectAlphaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2763522C1DA96DA300C11154 /* ProjectAlphaTests.m */; };
 		276352381DA96DA300C11154 /* ProjectAlphaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 276352371DA96DA300C11154 /* ProjectAlphaUITests.m */; };
+		27FA31081DADEF0C003F4F1C /* LogoSoemex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27FA31071DADEF0C003F4F1C /* LogoSoemex.jpg */; };
 		6C3D8CEC86FD9E92A870F57F /* Pods_ProjectAlpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A6203496746E29E96663E3 /* Pods_ProjectAlpha.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,8 +41,8 @@
 		276352131DA96DA200C11154 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		276352151DA96DA200C11154 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		276352161DA96DA200C11154 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		276352181DA96DA200C11154 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		276352191DA96DA200C11154 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		276352181DA96DA200C11154 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		276352191DA96DA200C11154 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		2763521C1DA96DA200C11154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2763521E1DA96DA200C11154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		276352211DA96DA200C11154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		276352331DA96DA300C11154 /* ProjectAlphaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectAlphaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		276352371DA96DA300C11154 /* ProjectAlphaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectAlphaUITests.m; sourceTree = "<group>"; };
 		276352391DA96DA300C11154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27FA31071DADEF0C003F4F1C /* LogoSoemex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = LogoSoemex.jpg; path = Images/LogoSoemex.jpg; sourceTree = "<group>"; };
 		39A6203496746E29E96663E3 /* Pods_ProjectAlpha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectAlpha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9E75327D367E14607133961 /* Pods-ProjectAlpha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectAlpha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectAlpha/Pods-ProjectAlpha.debug.xcconfig"; sourceTree = "<group>"; };
 		C1B04DAA4B069895B298AF6F /* Pods-ProjectAlpha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectAlpha.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectAlpha/Pods-ProjectAlpha.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,10 +119,12 @@
 		276352111DA96DA200C11154 /* ProjectAlpha */ = {
 			isa = PBXGroup;
 			children = (
+				27FA31061DADEEFF003F4F1C /* Images */,
+				27FA31051DADE732003F4F1C /* Foundation */,
 				276352151DA96DA200C11154 /* AppDelegate.h */,
 				276352161DA96DA200C11154 /* AppDelegate.m */,
-				276352181DA96DA200C11154 /* ViewController.h */,
-				276352191DA96DA200C11154 /* ViewController.m */,
+				276352181DA96DA200C11154 /* LoginViewController.h */,
+				276352191DA96DA200C11154 /* LoginViewController.m */,
 				2763521B1DA96DA200C11154 /* Main.storyboard */,
 				2763521E1DA96DA200C11154 /* Assets.xcassets */,
 				276352201DA96DA200C11154 /* LaunchScreen.storyboard */,
@@ -154,6 +158,21 @@
 				276352391DA96DA300C11154 /* Info.plist */,
 			);
 			path = ProjectAlphaUITests;
+			sourceTree = "<group>";
+		};
+		27FA31051DADE732003F4F1C /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		27FA31061DADEEFF003F4F1C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				27FA31071DADEF0C003F4F1C /* LogoSoemex.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		D1305C803260EA30377DD3E9 /* Frameworks */ = {
@@ -277,6 +296,7 @@
 				276352221DA96DA200C11154 /* LaunchScreen.storyboard in Resources */,
 				2763521F1DA96DA200C11154 /* Assets.xcassets in Resources */,
 				2763521D1DA96DA200C11154 /* Main.storyboard in Resources */,
+				27FA31081DADEF0C003F4F1C /* LogoSoemex.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2763521A1DA96DA200C11154 /* ViewController.m in Sources */,
+				2763521A1DA96DA200C11154 /* LoginViewController.m in Sources */,
 				276352171DA96DA200C11154 /* AppDelegate.m in Sources */,
 				276352141DA96DA200C11154 /* main.m in Sources */,
 			);

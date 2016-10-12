@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +18,39 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Alpha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh0-7M-10q">
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
+                                <color key="textColor" red="0.13517544598609066" green="0.11821871764030946" blue="0.60965835492227982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoSoemex.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AQg-B4-uMK">
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="46" id="0Xi-h6-TWf"/>
+                                    <constraint firstAttribute="width" constant="207" id="SoC-MR-rik"/>
+                                    <constraint firstAttribute="height" constant="46" id="Tmv-X4-rDe"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="Vjw-r5-k9W"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="207" id="ysO-qG-YTx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kh0-7M-10q" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="0RC-D9-oCn"/>
+                            <constraint firstItem="Kh0-7M-10q" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="7Vg-yF-np2"/>
+                            <constraint firstItem="Kh0-7M-10q" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="210" id="TDr-4Z-exm"/>
+                            <constraint firstItem="AQg-B4-uMK" firstAttribute="top" secondItem="Kh0-7M-10q" secondAttribute="bottom" constant="99" id="TKf-64-dM1"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="AQg-B4-uMK" secondAttribute="bottom" constant="228" id="We4-dn-b9Y"/>
+                            <constraint firstItem="Kh0-7M-10q" firstAttribute="centerX" secondItem="AQg-B4-uMK" secondAttribute="centerX" id="ZBN-D3-mBx"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LogoSoemex.jpg" width="1024" height="225"/>
+    </resources>
 </document>
